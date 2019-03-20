@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+	<input type="button" value="计算两数运算结果" onclick="computer()">
+	</body>
+	<script type="text/javascript">
+		function computer(){
+		var result;
+		var num1 = prompt("请输入第1个数");
+		var num2 = prompt("请输入第2个数");
+		var oper = prompt("请输入运算符");
+		switch (oper){
+			case "+":
+				result = parseInt(num1) +parseInt(num2);
+            break;
+			case "-":
+				result = num1 - num2;
+            break;
+			case "*":
+				result = num1 * num2;;
+            break;
+			case "/":
+				result = num1 / num2;;
+            break;
+    }
+      alert("计算结果为"+num1+oper+num2+"="+result);
+  }
+</script>
+</html>
